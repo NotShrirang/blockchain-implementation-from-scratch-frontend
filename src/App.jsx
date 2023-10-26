@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     axios
       .get(
-        "https://blockchain-implementation-from-scratch-frontend-70j4qmoad.vercel.app/display_blockchain"
+        "https://blockchain-implementation-from-scratch-backend-aq16qvwtl.vercel.app/display_blockchain"
       )
       .then((res) => {
         console.log(res.data.chain);
@@ -28,7 +28,7 @@ function App() {
     setMining(true);
     axios
       .get(
-        "https://blockchain-implementation-from-scratch-frontend-70j4qmoad.vercel.app/mine_block"
+        "https://blockchain-implementation-from-scratch-backend-aq16qvwtl.vercel.app/mine_block"
       )
       .then((res) => {
         setMining(false);
