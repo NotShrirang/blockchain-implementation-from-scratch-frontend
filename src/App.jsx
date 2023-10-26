@@ -11,7 +11,9 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/display_blockchain")
+      .get(
+        "https://blockchain-implementation-from-scratch-frontend-70j4qmoad.vercel.app/display_blockchain"
+      )
       .then((res) => {
         console.log(res.data.chain);
         setChain(res.data.chain.reverse());
@@ -25,7 +27,9 @@ function App() {
   const handleAddBlock = () => {
     setMining(true);
     axios
-      .get("http://localhost:8000/mine_block")
+      .get(
+        "https://blockchain-implementation-from-scratch-frontend-70j4qmoad.vercel.app/mine_block"
+      )
       .then((res) => {
         setMining(false);
         console.log(res.data);
